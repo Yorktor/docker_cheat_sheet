@@ -14,7 +14,7 @@ docker ps -aq
 docker rmi -f $(docker images -aq)
 
 # Remove all container
-docker rm $(docker ps -q)
+docker rm $(docker ps -aq)
 
 # Show container info
 docker inspect <container hash>
